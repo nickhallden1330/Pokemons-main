@@ -8,6 +8,25 @@ body {
 	background-color: dimgray;
 }
 
+.dark {
+	background-color: black;
+	color: #fff;
+}
+
+button {
+	padding: 7px;
+	border-radius: 14px;
+	border: none;
+}
+
+button:hover {
+	background-color: darkcyan;
+}
+
+button:active {
+	background-color: darkgray;
+}
+
 .container {
 	width: 100%;
 	max-width: 1240px;
@@ -27,6 +46,10 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	list-style-type: none;
+}
+
+.color {
+	color: #fff;
 }
 
 select {
