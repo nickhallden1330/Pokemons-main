@@ -2,6 +2,7 @@ let elList = document.querySelector('.js-list');
 let elSelect = document.querySelector('.js-select');
 let elSelec = document.querySelector('.js-selec');
 const elBtn = document.querySelector('.js-btn');
+const itemFragment = document.createDocumentFragment();
 var theme = false;
 
 function domwiew(array, node) {
@@ -28,8 +29,9 @@ function domwiew(array, node) {
 		newItem.appendChild(newImg);
 		newItem.appendChild(newTime);
 		newItem.appendChild(newText);
-		node.appendChild(newItem);
+		itemFragment.appendChild(newItem);
 	});
+	node.appendChild(itemFragment)
 }
 
 domwiew(pokemons, elList);
